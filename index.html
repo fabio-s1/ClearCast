@@ -11,20 +11,19 @@
     <!-- JavaScript File -->
     <script src="script.js" defer></script>
 </head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center min-h-screen font-sans text-white">
 
-<body class="bg-gray-900 flex items-center justify-center min-h-screen font-sans text-white">
-
-    <div class="weather-container w-full max-w-md p-8 rounded-lg">
+    <div class="weather-container w-full max-w-md p-8 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-gray-700 shadow-2xl">
         <h1 class="text-4xl font-bold text-center mb-6">ClearCast</h1>
 
         <!-- Search Section -->
         <div class="search-box flex gap-2 mb-6">
-            <input type="text" id="city-input" class="flex-grow p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter a city name...">
-            <button id="search-btn" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-md">Search</button>
+            <input type="text" id="city-input" class="flex-grow p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300" placeholder="Enter a city name...">
+            <button id="search-btn" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-md transition-transform transform hover:scale-105">Search</button>
         </div>
         <div class="text-center mb-6">
             <p class="text-gray-400">or</p>
-            <button id="location-btn" class="w-full mt-2 bg-gray-600 hover:bg-gray-700 p-3 rounded-md">Use Current Location</button>
+            <button id="location-btn" class="w-full mt-2 bg-gray-600 hover:bg-gray-700 p-3 rounded-md transition-transform transform hover:scale-105">Use Current Location</button>
         </div>
 
         <!-- Weather Display Section -->
