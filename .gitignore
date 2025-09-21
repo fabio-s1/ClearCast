@@ -1,0 +1,8 @@
+# JS
+config.js
+
+# Environment Files
+.env
+
+# Dependencies
+node_modules
